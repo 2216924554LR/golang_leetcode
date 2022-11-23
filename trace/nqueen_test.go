@@ -1,6 +1,16 @@
 package trace
 
+import (
+	"fmt"
+	"testing"
+)
+
 var solutions [][]string
+
+func TestNQueen(t *testing.T) {
+	res := sovleQueens(8)
+	fmt.Printf("%v", res)
+}
 
 func sovleQueens(n int) [][]string {
 	solutions = [][]string{}
